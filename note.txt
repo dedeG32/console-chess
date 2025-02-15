@@ -1,0 +1,32 @@
+movement()
+Do not display the availible moves
+# make sure no piece jump other piece (ignore)
+queen is combination of rook and bishop
+pawn movement: check 3 cases in front of them <Done>
+
+
+movement mechanic
+#possibility 1# make a list of possible moves> check if the move requested is in the list> make the move> refresh the list (self.possible_moves)
+cons: storage expensive (32 piece with possible pos stored)
+pros: Possible IA
+
+#possibility 2# check if the move request can be done or part of a one time generated list> make it <choosen> but may have to comeback to possibily 1 for making a checkmate option
+
+
+
+
+
+_______________________________________________Task Manager_______________________________________________________
+to fix next:
+2- Fix the chessboard.move_piece() method and availeble_case()                                              <Done>-can be better (too much if statments)
+3- Pawn movement, not only adding to go down for black. White pawn are going up so -1 if color white.       <Done>
+4- Add positional input reader                                                                              <Done>
+
+waning:
+chekmate options:
+    option1: non-exiting, traditional board game, where the player have to annaouce it
+    option2: make a liste of possible moves of all the pieces of both colors, and check if king can make a move excluding the case in the other team list,
+                if set empty (king cant move) and exposed (king.position in ennemy_team_possible_moves_list) and no ally piece can block exposure (or a piece that can take the cheking ennemy piece or can block the path)
+    option3: that is not an exam choose option 1, maybe improve that after finishing the project. #avoidburnout
+
+1- knight movement
